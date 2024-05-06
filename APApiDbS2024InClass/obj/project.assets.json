@@ -649,19 +649,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/braxtonphillips/.nuget/packages/": {}
+    "/home/stubbe/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/braxtonphillips/Desktop/WINEAPP/APApiDbS2024InClass/APApiDbS2024InClass/APApiDbS2024InClass.csproj",
+      "projectUniqueName": "/home/stubbe/git/WineAppBackend/APApiDbS2024InClass/APApiDbS2024InClass.csproj",
       "projectName": "APApiDbS2024InClass",
-      "projectPath": "/Users/braxtonphillips/Desktop/WINEAPP/APApiDbS2024InClass/APApiDbS2024InClass/APApiDbS2024InClass.csproj",
-      "packagesPath": "/Users/braxtonphillips/.nuget/packages/",
-      "outputPath": "/Users/braxtonphillips/Desktop/WINEAPP/APApiDbS2024InClass/APApiDbS2024InClass/obj/",
+      "projectPath": "/home/stubbe/git/WineAppBackend/APApiDbS2024InClass/APApiDbS2024InClass.csproj",
+      "packagesPath": "/home/stubbe/.nuget/packages/",
+      "outputPath": "/home/stubbe/git/WineAppBackend/APApiDbS2024InClass/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/braxtonphillips/.nuget/NuGet/NuGet.Config"
+        "/home/stubbe/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -717,15 +717,15 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[7.0.16, 7.0.16]"
+            "version": "[7.0.18, 7.0.18]"
           },
           {
-            "name": "Microsoft.NETCore.App.Host.osx-arm64",
-            "version": "[7.0.16, 7.0.16]"
+            "name": "Microsoft.NETCore.App.Host.linux-x64",
+            "version": "[7.0.18, 7.0.18]"
           },
           {
             "name": "Microsoft.NETCore.App.Ref",
-            "version": "[7.0.16, 7.0.16]"
+            "version": "[7.0.18, 7.0.18]"
           }
         ],
         "frameworkReferences": {
@@ -736,7 +736,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.204/RuntimeIdentifierGraph.json"
       }
     }
   }

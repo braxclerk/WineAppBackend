@@ -5,3 +5,11 @@
 /Users/braxtonphillips/Desktop/Lecture06Angular/APApiDbS2024InClass/APApiDbS2024InClass/obj/Debug/net7.0/APApiDbS2024InClass.csproj.CoreCompileInputs.cache
 /Users/braxtonphillips/Desktop/Lecture06Angular/APApiDbS2024InClass/APApiDbS2024InClass/obj/Debug/net7.0/APApiDbS2024InClass.MvcApplicationPartsAssemblyInfo.cs
 /Users/braxtonphillips/Desktop/Lecture06Angular/APApiDbS2024InClass/APApiDbS2024InClass/obj/Debug/net7.0/APApiDbS2024InClass.MvcApplicationPartsAssemblyInfo.cache
+/home/stubbe/git/WineAppBackend/APApiDbS2024InClass/obj/Debug/net7.0/APApiDbS2024InClass.csproj.AssemblyReference.cache
+/home/stubbe/git/WineAppBackend/APApiDbS2024InClass/obj/Debug/net7.0/APApiDbS2024InClass.GeneratedMSBuildEditorConfig.editorconfig
+/home/stubbe/git/WineAppBackend/APApiDbS2024InClass/obj/Debug/net7.0/APApiDbS2024InClass.AssemblyInfoInputs.cache
+/home/stubbe/git/WineAppBackend/APApiDbS2024InClass/obj/Debug/net7.0/APApiDbS2024InClass.AssemblyInfo.cs
+/home/stubbe/git/WineAppBackend/APApiDbS2024InClass/obj/Debug/net7.0/APApiDbS2024InClass.csproj.CoreCompileInputs.cache
+/home/stubbe/git/WineAppBackend/APApiDbS2024InClass/obj/Debug/net7.0/APApiDbS2024InClass.MvcApplicationPartsAssemblyInfo.cs
+/home/stubbe/git/WineAppBackend/APApiDbS2024InClass/obj/Debug/net7.0/APApiDbS2024InClass.MvcApplicationPartsAssemblyInfo.cache
+/home/stubbe/git/WineAppBackend/APApiDbS2024InClass/obj/Debug/net7.0/APApiDbS2024InClass.sourcelink.json

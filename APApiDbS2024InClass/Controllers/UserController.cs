@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
 using APApiDbS2024InClass.DataRepository;
-using APApiDbS2024InClass.Models;
-using System.Threading.Tasks;
+/* using APApiDbS2024InClass.Models; */
+/* using System.Threading.Tasks; */
 
 namespace APApiDbS2024InClass.Controllers
 {
@@ -28,7 +28,7 @@ namespace APApiDbS2024InClass.Controllers
     [Authorize] // Ensure that user is authorized and updating their own profile
     public async Task<IActionResult> UpdateUser(int id, [FromBody] User user)
     {
-      if (id != user.UserId)
+      if (id != user.Id)
       {
         return BadRequest("Mismatch between route ID and body ID.");
       }
