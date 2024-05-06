@@ -5,6 +5,7 @@ namespace APApiDbS2024InClass.Middleware
   {
     public HeaderAuthenticationMiddleware()
     {
+
     }
   }
 }
