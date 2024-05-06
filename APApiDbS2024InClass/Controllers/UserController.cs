@@ -28,7 +28,7 @@ namespace APApiDbS2024InClass.Controllers
     [Authorize] // Ensure that user is authorized and updating their own profile
     public async Task<IActionResult> UpdateUser(int id, [FromBody] User user)
     {
-      if (id != user.UserId)
+      if (id != user.Id)
       {
         return BadRequest("Mismatch between route ID and body ID.");
       }

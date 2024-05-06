@@ -1,14 +1,15 @@
 using Microsoft.AspNetCore.Mvc;
 using APApiDbS2024InClass.DataRepository;
-using APApiDbS2024InClass.Model; // Ensure you have the correct namespace for your User model
+using APApiDbS2024InClass.Model;
+using System.Threading.Tasks;
 
 namespace APApiDbS2024InClass.Controllers
 {
-  [Route("api/[controller]")]
+  [Route("api/admin")]
   [ApiController]
-  public class AdminController : UserController
+  public class AdminController : ControllerBase
   {
-    private readonly AdminRepository _adminRepository; // Use AdminRepository for admin-specific actions
+    private readonly AdminRepository _adminRepository;
 
     public AdminController(AdminRepository adminRepository)
     {
@@ -17,22 +18,22 @@ namespace APApiDbS2024InClass.Controllers
 
     // GET: api/admin/users
     [HttpGet("users")]
-    public IActionResult GetAllUsers()
+    public async Task<IActionResult> GetAllUsers()
     {
-      var users = _adminRepository.GetUsersByRole(); // Assuming GetUsersByRole returns all users if no role is specified
+      var users = await _adminRepository.GetAllUsersAsync();
       return Ok(users);
     }
 
     // POST: api/admin/adduser
     [HttpPost("adduser")]
-    public IActionResult AddUser([FromBody] User user)
+    public async Task<IActionResult> AddUser([FromBody] User user)
     {
       if (user == null || !ModelState.IsValid)
       {
         return BadRequest(ModelState);
       }
 
-      bool created = _adminRepository.InsertUser(user);
+      bool created = await _adminRepository.InsertUserAsync(user);
       if (created)
       {
         return CreatedAtAction(nameof(GetAllUsers), new { id = user.Id }, user);
@@ -43,11 +44,12 @@ namespace APApiDbS2024InClass.Controllers
       }
     }
 
-    // POST: api/admin/deleteuser/{id}
-    [HttpPost("deleteuser/{id}")]
-    public IActionResult DeleteUser(int id)
+    // DELETE: api/admin/deleteuser/{id}
+    [HttpDelete("deleteuser/{id}")]
+    public async Task<IActionResult> DeleteUser(int id)
     {
-      if (!_adminRepository.DeleteUser(id))
+      bool deleted = await _adminRepository.DeleteUserAsync(id);
+      if (!deleted)
         return BadRequest("Failed to delete user");
 
       return Ok("User deleted successfully");
@@ -55,9 +57,10 @@ namespace APApiDbS2024InClass.Controllers
 
     // DELETE: api/admin/deletereview/{id}
     [HttpDelete("deletereview/{id}")]
-    public IActionResult DeleteReview(int id)
+    public async Task<IActionResult> DeleteReview(int id)
     {
-      if (!_adminRepository.DeleteReview(id))
+      bool deleted = await _adminRepository.DeleteReviewAsync(id);
+      if (!deleted)
       {
         return NotFound($"Review with ID {id} not found.");
       }
