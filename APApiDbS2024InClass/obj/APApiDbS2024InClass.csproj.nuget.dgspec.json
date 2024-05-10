@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/braxtonphillips/Desktop/WINEAPP/APApiDbS2024InClass/APApiDbS2024InClass/APApiDbS2024InClass.csproj": {}
+    "/Users/braxtonphillips/Desktop/Lecture06Angular/APApiDbS2024InClass/APApiDbS2024InClass/APApiDbS2024InClass.csproj": {}
   },
   "projects": {
-    "/Users/braxtonphillips/Desktop/WINEAPP/APApiDbS2024InClass/APApiDbS2024InClass/APApiDbS2024InClass.csproj": {
+    "/Users/braxtonphillips/Desktop/Lecture06Angular/APApiDbS2024InClass/APApiDbS2024InClass/APApiDbS2024InClass.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/braxtonphillips/Desktop/WINEAPP/APApiDbS2024InClass/APApiDbS2024InClass/APApiDbS2024InClass.csproj",
+        "projectUniqueName": "/Users/braxtonphillips/Desktop/Lecture06Angular/APApiDbS2024InClass/APApiDbS2024InClass/APApiDbS2024InClass.csproj",
         "projectName": "APApiDbS2024InClass",
-        "projectPath": "/Users/braxtonphillips/Desktop/WINEAPP/APApiDbS2024InClass/APApiDbS2024InClass/APApiDbS2024InClass.csproj",
+        "projectPath": "/Users/braxtonphillips/Desktop/Lecture06Angular/APApiDbS2024InClass/APApiDbS2024InClass/APApiDbS2024InClass.csproj",
         "packagesPath": "/Users/braxtonphillips/.nuget/packages/",
-        "outputPath": "/Users/braxtonphillips/Desktop/WINEAPP/APApiDbS2024InClass/APApiDbS2024InClass/obj/",
+        "outputPath": "/Users/braxtonphillips/Desktop/Lecture06Angular/APApiDbS2024InClass/APApiDbS2024InClass/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/braxtonphillips/.nuget/NuGet/NuGet.Config"
@@ -20,6 +20,7 @@
           "net7.0"
         ],
         "sources": {
+          "/usr/local/share/dotnet/sdk/7.0.315/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -32,11 +33,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -67,20 +63,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.16, 7.0.16]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.osx-arm64",
-              "version": "[7.0.16, 7.0.16]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[7.0.16, 7.0.16]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -89,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.315/RuntimeIdentifierGraph.json"
         }
       }
     }

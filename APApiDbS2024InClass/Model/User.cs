@@ -8,7 +8,7 @@ public class User
     Id = id;
   }
 
-  public User(int id, string firstName, string lastName, string email, string password, DateTime dob, string country, string role = "User")
+  public User(int id, string firstName, string lastName, string email, string password, string country, string role = "User")
   {
     Id = id;
     FirstName = firstName;
@@ -18,6 +18,8 @@ public class User
     Country = country;
     Role = role;
   }
+
+  public User() { }
 
   [Key]
   public int Id { get; set; }
@@ -43,4 +45,7 @@ public class User
 
   [Required]
   public string Role { get; set; }
+
+   [Required]
+   public string Username { get; set; }
 }

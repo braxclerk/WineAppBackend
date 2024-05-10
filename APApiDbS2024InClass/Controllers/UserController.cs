@@ -1,12 +1,12 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
 using APApiDbS2024InClass.DataRepository;
-using APApiDbS2024InClass.Models;
+using APApiDbS2024InClass.Model;
 using System.Threading.Tasks;
 
 namespace APApiDbS2024InClass.Controllers
 {
-  [Route("api/users")]
+  [Route("api/Users")]
   [ApiController]
   public class UserController : ControllerBase
   {
@@ -17,15 +17,49 @@ namespace APApiDbS2024InClass.Controllers
       _userRepository = userRepository;
     }
 
-    [HttpPost("register")]
+       [HttpGet()]
+        public async Task<IActionResult> GetAllUsers()
+        {
+            var users = await _userRepository.GetAllUsers();
+            return Ok(users);
+        }
+
+        [HttpPost("register")]
     public async Task<IActionResult> RegisterUser([FromBody] User user)
     {
       var newUser = await _userRepository.RegisterUser(user);
       return newUser != null ? Ok(newUser) : BadRequest("Failed to register user.");
     }
 
+
+    [HttpGet("role/{roleId}")]
+    public async Task<IActionResult> GetUsersByRole(string roleId)
+    {
+      var users = await _userRepository.GetUsersByRole(roleId);
+      return Ok(users);
+    }
+
+
+    //[HttpPost("add")]
+    //public async Task<IActionResult> AddUser([FromBody] User user)
+    //{
+    //  if (user == null || !ModelState.IsValid)
+    //  {
+    //    return BadRequest(ModelState);
+    //  }
+
+    //  bool created = await _userRepository.InsertUser(user);
+    //  if (created)
+    //  {
+    //    return CreatedAtAction(nameof(GetUsersByRole), new { roleId = user.Role }, user);
+    //  }
+    //  return BadRequest("Unable to add user");
+    //}
+
+
+
     [HttpPut("update/{id}")]
-    [Authorize] // Ensure that user is authorized and updating their own profile
+    //[Authorize] // Ensure that user is authorized and updating their own profile
     public async Task<IActionResult> UpdateUser(int id, [FromBody] User user)
     {
       if (id != user.Id)
@@ -37,12 +71,18 @@ namespace APApiDbS2024InClass.Controllers
       return updated ? Ok("User updated successfully.") : NotFound("User not found.");
     }
 
-    [HttpDelete("delete/{id}")]
-    [Authorize(Roles = "Admin")] // Ensure only admins can delete users
+    [HttpDelete("{id}")]
     public async Task<IActionResult> DeleteUser(int id)
     {
       bool deleted = await _userRepository.DeleteUser(id);
-      return deleted ? Ok("User deleted successfully.") : NotFound("User not found.");
+      if (deleted)
+      {
+        return Ok("User deleted successfully.");
+      }
+      else
+      {
+        return NotFound("User not found.");
+      }
     }
   }
 }
