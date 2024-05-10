@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pVRrH36wHqc6J7bp6e1JqcXslfGfJoZsxyzbgd152TvQ65XA3b5R90ckR9cTokCtwb3qF9VEpZLLfMGMxxhWbg==",
+  "dgSpecHash": "niwXdgQJNqXxAaIKPpb59G0a2mN2RqGdYM53RCg4kfahVUw9GAvBLn7yoNT+EmBkydUmVVzdQOrPebXpSzAW2w==",
   "success": true,
-  "projectFilePath": "/Users/braxtonphillips/Desktop/WINEAPP/APApiDbS2024InClass/APApiDbS2024InClass/APApiDbS2024InClass.csproj",
+  "projectFilePath": "/Users/braxtonphillips/Desktop/Lecture06Angular/APApiDbS2024InClass/APApiDbS2024InClass/APApiDbS2024InClass.csproj",
   "expectedPackageFiles": [
     "/Users/braxtonphillips/.nuget/packages/microsoft.aspnetcore.openapi/7.0.15/microsoft.aspnetcore.openapi.7.0.15.nupkg.sha512",
     "/Users/braxtonphillips/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
@@ -13,10 +13,7 @@
     "/Users/braxtonphillips/.nuget/packages/swashbuckle.aspnetcore/6.5.0/swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
     "/Users/braxtonphillips/.nuget/packages/swashbuckle.aspnetcore.swagger/6.5.0/swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
     "/Users/braxtonphillips/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.5.0/swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
-    "/Users/braxtonphillips/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.5.0/swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
-    "/Users/braxtonphillips/.nuget/packages/microsoft.netcore.app.ref/7.0.16/microsoft.netcore.app.ref.7.0.16.nupkg.sha512",
-    "/Users/braxtonphillips/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.16/microsoft.aspnetcore.app.ref.7.0.16.nupkg.sha512",
-    "/Users/braxtonphillips/.nuget/packages/microsoft.netcore.app.host.osx-arm64/7.0.16/microsoft.netcore.app.host.osx-arm64.7.0.16.nupkg.sha512"
+    "/Users/braxtonphillips/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.5.0/swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
   ],
   "logs": []
 }

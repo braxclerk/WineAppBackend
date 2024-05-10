@@ -5,7 +5,15 @@ using System.Collections.Generic;
 namespace APApiDbS2024InClass.DataRepository
 {
   public class WineRepository : BaseRepository
+
   {
+    private readonly string _connectionString;
+
+    public WineRepository(string connectionString)
+    {
+      _connectionString = connectionString;
+    }
+
     // Get all wines
     public List<Wine> GetWines()
     {
@@ -100,16 +108,15 @@ namespace APApiDbS2024InClass.DataRepository
       }
     }
 
-    // Delete a wine
-    public bool DeleteWine(int id)
+    public async Task<bool> DeleteWine(int wineId)
     {
-      using (var dbConn = new NpgsqlConnection(ConnectionString))
+      using (var conn = new NpgsqlConnection(_connectionString))
       {
-        var cmd = dbConn.CreateCommand();
-        cmd.CommandText = "DELETE FROM wines WHERE id = @id";
-        cmd.Parameters.AddWithValue("@id", NpgsqlDbType.Integer, id);
-
-        return DeleteData(dbConn, cmd);
+        var cmd = new NpgsqlCommand("DELETE FROM wines WHERE id = @Id", conn);
+        cmd.Parameters.AddWithValue("@Id", wineId);
+        conn.Open();
+        var result = await cmd.ExecuteNonQueryAsync();
+        return result > 0;
       }
     }
   }

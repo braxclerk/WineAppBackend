@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/APApiDbS2024InClass.props" />
+</Project>

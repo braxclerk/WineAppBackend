@@ -1,38 +1,47 @@
 ﻿<Properties StartupConfiguration="{1623520D-9AA0-4D9B-BA1F-DA053EA97162}|https">
+  <MonoDevelop.Ide.ItemProperties.AuthenticationHelperTests FirstBuild="True" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <Breakpoint file="/Users/braxtonphillips/Desktop/Lecture06Angular/APApiDbS2024InClass/APApiDbS2024InClass/DataRepository/AdminRepository.cs" relfile="APApiDbS2024InClass/DataRepository/AdminRepository.cs" line="41" column="1" />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="APApiDbS2024InClass/Model/Wine.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="APApiDbS2024InClass/Controllers/WinesController.cs">
     <Files>
-      <File FileName="APApiDbS2024InClass/DataRepository/BaseRepository.cs" Line="11" Column="29" />
-      <File FileName="APApiDbS2024InClass/DataRepository/ReviewRepository.cs" Line="30" Column="30" />
-      <File FileName="APApiDbS2024InClass/Program.cs" Line="29" Column="1" />
-      <File FileName="APApiDbS2024InClass/Model/Wine.cs" Line="23" Column="1" />
-      <File FileName="APApiDbS2024InClass/Model/User.cs" Line="25" Column="36" />
-      <File FileName="APApiDbS2024InClass/Model/Review.cs" Line="11" Column="13" />
-      <File FileName="APApiDbS2024InClass/Controllers/ReviewController.cs" Line="9" Column="26" />
-      <File FileName="APApiDbS2024InClass/Controllers/AdminController.cs" Line="31" Column="37" />
-      <File FileName="APApiDbS2024InClass/Model/Login.cs" Line="1" Column="1" />
-      <File FileName="APApiDbS2024InClass/Model/Admin.cs" Line="4" Column="26" />
-      <File FileName="APApiDbS2024InClass/DataRepository/UserRepository.cs" Line="39" Column="17" />
-      <File FileName="APApiDbS2024InClass/DataRepository/AdminRepository.cs" Line="1" Column="1" />
+      <File FileName="APApiDbS2024InClass/DataRepository/BaseRepository.cs" />
+      <File FileName="APApiDbS2024InClass/DataRepository/ReviewRepository.cs" />
+      <File FileName="APApiDbS2024InClass/Program.cs" />
+      <File FileName="APApiDbS2024InClass/Model/Wine.cs" />
+      <File FileName="APApiDbS2024InClass/Model/User.cs" />
+      <File FileName="APApiDbS2024InClass/Model/Review.cs" />
+      <File FileName="APApiDbS2024InClass/Controllers/ReviewController.cs" />
+      <File FileName="APApiDbS2024InClass/Controllers/AdminController.cs" />
+      <File FileName="APApiDbS2024InClass/Model/Login.cs" />
+      <File FileName="APApiDbS2024InClass/Model/Admin.cs" />
+      <File FileName="APApiDbS2024InClass/DataRepository/UserRepository.cs" />
+      <File FileName="APApiDbS2024InClass/DataRepository/AdminRepository.cs" />
+      <File FileName="APApiDbS2024InClass/Controllers/UserController.cs" />
+      <File FileName="APApiDbS2024InClass/Controllers/WinesController.cs" Line="34" Column="43" />
+      <File FileName="APApiDbS2024InClass/Controllers/LoginController.cs" />
+      <File FileName="APApiDbS2024InClass/DataRepository/WineRepository.cs" />
+      <File FileName="APApiDbS2024InClass/appsettings.json" />
+      <File FileName="APApiDbS2024InClass/Middleware/HeaderAuthenticationMiddleware.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="APApiDbS2024InClass" expanded="True">
-            <Node name="APApiDbS2024InClass">
-              <Node name="Controllers" expanded="True" />
-              <Node name="DataRepository" selected="True" />
-              <Node name="Middleware" expanded="True" />
+            <Node name="APApiDbS2024InClass" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="WinesController.cs" selected="True" />
+              </Node>
+              <Node name="DataRepository" expanded="True" />
+              <Node name="Model" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.APApiDbS2024InClass PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.APApiDbS2024InClass PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>

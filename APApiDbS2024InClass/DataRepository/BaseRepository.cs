@@ -6,6 +6,7 @@ namespace APApiDbS2024InClass.DataRepository
 {
   public class BaseRepository
   {
+
     protected const string ConnectionString = "Host=localhost;Port=5431;Database=AppWineDb;Username=postgres;Password=";
 
     protected NpgsqlDataReader? GetData(NpgsqlConnection conn, NpgsqlCommand cmd)

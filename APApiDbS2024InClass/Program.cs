@@ -1,5 +1,6 @@
 ﻿using System;
 using APApiDbS2024InClass.DataRepository;
+//using APApiDbS2024InClass.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,10 +9,15 @@ builder.Services.AddControllers();
 
 builder.Services.AddScoped<UserRepository>();
 
-builder.Services.AddScoped<IReviewRepository, ReviewRepository>(provider => {
-  // Retrieve the connection string from configuration
+builder.Services.AddScoped(provider => {
   var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
   return new ReviewRepository(connectionString);
+});
+
+// Add services to the container.
+builder.Services.AddScoped(provider => {
+  var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+  return new WineRepository(connectionString);
 });
 
 builder.Services.AddEndpointsApiExplorer();
@@ -21,6 +27,9 @@ builder.Services.AddControllers().AddJsonOptions(options =>
 {
   options.JsonSerializerOptions.PropertyNamingPolicy = System.Text.Json.JsonNamingPolicy.CamelCase;
 });
+
+
+
 
 var app = builder.Build();
 
@@ -39,10 +48,11 @@ if (app.Environment.IsDevelopment())
 }
 
 
+//app.UseHeaderAuthenticationMiddleware();
+//app.UseBasicAuthenticationMiddleware();
+app.UseHttpsRedirection();
+app.UseAuthorization();
 
-//app.UseHttpsRedirection();
-
-//app.UseAuthorization();
 app.UseRouting();
 app.MapControllers();
 app.UseStaticFiles();

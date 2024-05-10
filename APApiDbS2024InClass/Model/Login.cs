@@ -1,26 +1,12 @@
-using System;
-using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
-namespace APApiDbS2024InClass.Model
+namespace APApiDbS2024InClass.Model;
+
+public class Login
 {
-  public class Login
-  {
-    [Required]
-    [EmailAddress]
-    public string Email { get; set; }
+    [JsonPropertyName("username")]
+    public string Username { get; set; }  // Changed from 'Username' to 'Email' and specified 'string' as the type
 
-    [Required]
-    [DataType(DataType.Password)]
-    public string Password { get; set; }
-
-    public Login()
-    {
-    }
-
-    public Login(string email, string password)
-    {
-      Email = email;
-      Password = password;
-    }
-  }
+    [JsonPropertyName("password")]
+    public string Password { get; set; }  // Specified 'string' as the type for the password
 }
