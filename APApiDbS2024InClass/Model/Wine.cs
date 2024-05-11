@@ -29,5 +29,5 @@ public class Wine
     [Required]
     [ForeignKey(nameof(User))]
     public User User { get; set; }
-    public int UserId { get; set; }
+
 }
