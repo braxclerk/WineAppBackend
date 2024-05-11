@@ -19,5 +19,5 @@ public class Wine
   //[Required]
   public int Age { get; set; }  // Age in years
   //[Required]
-  public decimal Price { get; set; }
+  public decimal UserId { get; set; }
 }

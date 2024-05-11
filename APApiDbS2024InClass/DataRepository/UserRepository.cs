@@ -4,6 +4,8 @@ using System.Threading.Tasks;
 using APApiDbS2024InClass.Model;
 using System.Security.Cryptography;
 using System.Text;
+//INSERT INTO users (first_name, last_name, email, username, password, country, user_role)
+//VALUES('Admin', 'User', 'admin@example.com', 'adminuser', 'encrypted_password', 'USA', 'admin');
 
 namespace APApiDbS2024InClass.DataRepository
 {
