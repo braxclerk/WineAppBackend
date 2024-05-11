@@ -9,10 +9,7 @@ builder.Services.AddControllers();
 
 builder.Services.AddScoped<UserRepository>();
 
-builder.Services.AddScoped(provider => {
-  var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-  return new ReviewRepository(connectionString);
-});
+
 
 // Add services to the container.
 builder.Services.AddScoped(provider => {

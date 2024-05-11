@@ -40,23 +40,7 @@ namespace APApiDbS2024InClass.Controllers
     }
 
 
-    //[HttpPost("add")]
-    //public async Task<IActionResult> AddUser([FromBody] User user)
-    //{
-    //  if (user == null || !ModelState.IsValid)
-    //  {
-    //    return BadRequest(ModelState);
-    //  }
-
-    //  bool created = await _userRepository.InsertUser(user);
-    //  if (created)
-    //  {
-    //    return CreatedAtAction(nameof(GetUsersByRole), new { roleId = user.Role }, user);
-    //  }
-    //  return BadRequest("Unable to add user");
-    //}
-
-
+ 
 
     [HttpPut("update/{id}")]
     //[Authorize] // Ensure that user is authorized and updating their own profile

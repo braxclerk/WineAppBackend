@@ -1,5 +1,5 @@
-using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 public class User
 {
@@ -22,6 +22,7 @@ public class User
   public User() { }
 
   [Key]
+  /* [KeyAttribute] */
   public int Id { get; set; }
 
   [Required]
