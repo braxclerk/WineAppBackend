@@ -20,6 +20,7 @@ public class LoginController : Controller
     {
         if (await _userRepository.ValidateUser(credentials.Username, credentials.Password))
         {
+            var userId = await _userRepository.GetUserIdByUserName(credentials.Username);
             // 1. Concatenate username and password with a semicolon
             var text = $"{credentials.Username}:{credentials.Password}";
             // 2. Base64 encode the above
@@ -27,7 +28,7 @@ public class LoginController : Controller
             var encodedCredentials = Convert.ToBase64String(bytes);
             // 3. Prefix with Basic
             var headerValue = $"Basic {encodedCredentials}";
-            return Ok(new { headerValue = headerValue });
+            return Ok(new { headerValue = headerValue, userId = userId});
         }
         else
         {

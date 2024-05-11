@@ -3,42 +3,47 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <Breakpoint file="/Users/braxtonphillips/Desktop/Lecture06Angular/APApiDbS2024InClass/APApiDbS2024InClass/DataRepository/AdminRepository.cs" relfile="APApiDbS2024InClass/DataRepository/AdminRepository.cs" line="41" column="1" />
+    <BreakpointStore>
+      <Breakpoint file="/Users/braxtonphillips/Desktop/Lecture06Angular/APApiDbS2024InClass/APApiDbS2024InClass/DataRepository/AdminRepository.cs" relfile="APApiDbS2024InClass/DataRepository/AdminRepository.cs" line="41" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="APApiDbS2024InClass/Controllers/WinesController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="APApiDbS2024InClass/Model/User.cs">
     <Files>
-      <File FileName="APApiDbS2024InClass/DataRepository/BaseRepository.cs" />
-      <File FileName="APApiDbS2024InClass/DataRepository/ReviewRepository.cs" />
-      <File FileName="APApiDbS2024InClass/Program.cs" />
-      <File FileName="APApiDbS2024InClass/Model/Wine.cs" />
-      <File FileName="APApiDbS2024InClass/Model/User.cs" />
-      <File FileName="APApiDbS2024InClass/Model/Review.cs" />
-      <File FileName="APApiDbS2024InClass/Controllers/ReviewController.cs" />
-      <File FileName="APApiDbS2024InClass/Controllers/AdminController.cs" />
-      <File FileName="APApiDbS2024InClass/Model/Login.cs" />
-      <File FileName="APApiDbS2024InClass/Model/Admin.cs" />
-      <File FileName="APApiDbS2024InClass/DataRepository/UserRepository.cs" />
-      <File FileName="APApiDbS2024InClass/DataRepository/AdminRepository.cs" />
-      <File FileName="APApiDbS2024InClass/Controllers/UserController.cs" />
-      <File FileName="APApiDbS2024InClass/Controllers/WinesController.cs" Line="34" Column="43" />
-      <File FileName="APApiDbS2024InClass/Controllers/LoginController.cs" />
-      <File FileName="APApiDbS2024InClass/DataRepository/WineRepository.cs" />
+      <File FileName="APApiDbS2024InClass/DataRepository/BaseRepository.cs" Line="22" Column="19" />
+      <File FileName="APApiDbS2024InClass/Program.cs" Line="56" Column="11" />
+      <File FileName="APApiDbS2024InClass/Model/Wine.cs" Line="30" Column="31" />
+      <File FileName="APApiDbS2024InClass/Model/User.cs" Line="51" Column="40" />
+      <File FileName="APApiDbS2024InClass/Model/Login.cs" Line="13" Column="1" />
+      <File FileName="APApiDbS2024InClass/DataRepository/UserRepository.cs" Line="14" Column="39" />
+      <File FileName="APApiDbS2024InClass/Controllers/UserController.cs" Line="43" Column="2" />
+      <File FileName="APApiDbS2024InClass/Controllers/WinesController.cs" Line="36" Column="1" />
+      <File FileName="APApiDbS2024InClass/Controllers/LoginController.cs" Line="15" Column="6" />
+      <File FileName="APApiDbS2024InClass/DataRepository/WineRepository.cs" Line="70" Column="8" />
       <File FileName="APApiDbS2024InClass/appsettings.json" />
-      <File FileName="APApiDbS2024InClass/Middleware/HeaderAuthenticationMiddleware.cs" />
+      <File FileName="APApiDbS2024InClass/Middleware/HeaderAuthenticationMiddleware.cs" Line="24" Column="28" />
+      <File FileName="APApiDbS2024InClass/Middleware/BasicAuthenticationMiddleware.cs" Line="85" Column="1" />
+      <File FileName="APApiDbS2024InClass/Middleware/AuthenticationHelper.cs" Line="22" Column="1" />
+      <File FileName="AuthenticationHelperTests/UnitTest1.cs" Line="21" Column="1" />
+      <File FileName="AuthenticationHelperTests/Usings.cs" Line="2" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="APApiDbS2024InClass" expanded="True">
             <Node name="APApiDbS2024InClass" expanded="True">
-              <Node name="Controllers" expanded="True">
-                <Node name="WinesController.cs" selected="True" />
-              </Node>
+              <Node name="Controllers" expanded="True" />
               <Node name="DataRepository" expanded="True" />
-              <Node name="Model" expanded="True" />
+              <Node name="Middleware" expanded="True" />
+              <Node name="Model" expanded="True">
+                <Node name="User.cs" selected="True" />
+              </Node>
             </Node>
+            <Node name="AuthenticationHelperTests" expanded="True" />
           </Node>
         </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>

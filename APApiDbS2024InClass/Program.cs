@@ -48,7 +48,7 @@ if (app.Environment.IsDevelopment())
 //app.UseHeaderAuthenticationMiddleware();
 //app.UseBasicAuthenticationMiddleware();
 app.UseHttpsRedirection();
-app.UseAuthorization();
+//app.UseAuthorization();
 
 app.UseRouting();
 app.MapControllers();

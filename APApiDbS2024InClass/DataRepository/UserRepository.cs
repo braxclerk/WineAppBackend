@@ -38,6 +38,29 @@ namespace APApiDbS2024InClass.DataRepository
             return users;
         }
 
+        public async Task<int?> GetUserIdByUserName(string username)
+        {
+            using (var dbConn = new NpgsqlConnection(ConnectionString))
+            {
+                await dbConn.OpenAsync();
+                var cmd = new NpgsqlCommand("SELECT id FROM users WHERE username = @username", dbConn);
+                cmd.Parameters.AddWithValue("@username", username);
+
+                using (var reader = await cmd.ExecuteReaderAsync())
+                {
+                    if (reader.Read()) // Check if the query returned at least one row
+                    {
+                        return Convert.ToInt32(reader["id"]);
+                    }
+                    else
+                    {
+                        return null; // Return null if no user is found with the given email
+                    }
+                }
+            }
+        }
+
+
         public async Task<User> RegisterUser(User user)
         {
             if (user == null)
@@ -109,7 +132,7 @@ namespace APApiDbS2024InClass.DataRepository
                 await dbConn.OpenAsync();
                 var cmd = new NpgsqlCommand("SELECT COUNT(*) FROM users WHERE username = @username AND password = @password", dbConn);
                 cmd.Parameters.AddWithValue("@username", username);
-                cmd.Parameters.AddWithValue("@password", password);  // Consider using hashed passwords
+                cmd.Parameters.AddWithValue("@password", password); 
 
                 var result = (long)await cmd.ExecuteScalarAsync();
                 return result > 0;
